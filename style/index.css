@@ -1,0 +1,175 @@
+hr {
+    margin: 1%;
+}
+
+h3 {
+    text-align: center;
+    color: ghostwhite;
+    padding: 1%;
+    text-decoration: none;
+    transition: 0.2s;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+
+}
+
+a:hover {
+    color: #b5382f;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+h3:hover {
+    color: #b5382f;
+    text-decoration: none;
+    transition: 0.2s;
+    margin: auto;
+}
+
+.carousel-title {
+    z-index: 2;
+    position: absolute;
+    top: 160;
+    left: 300;
+    right: 300;
+    background-color: rgba(0,0,0,0.6);
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+#slider {
+    width: 1349px;
+    height: 550px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 9000px;
+    height: 550px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 1349px;
+    height: 550px;
+}
+
+
+#slider img {
+	height: 100%;
+    width: 100%;
+    
+}
+
+
+#sinopsis {
+    background-color: rgba(0,0,0,0.6);
+    color: ghostwhite;
+    padding: 0% 9px;
+    text-align: justify;
+    margin: 0px 0px -15px 0px;
+    display: inline-block;
+}
+
+.video {
+    display: inline-block;
+    width: 43%;
+}
+
+.sinopsis {
+    display: inline-block;
+    width: 56%;
+}
+
+#sinopsis h1 {
+    text-align: center;
+    margin: 0;
+}
+
+#sinopsis p {
+    margin: 10px;
+    padding: 0;
+}
+
+#personajes {
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    margin: -25px 0px -16px 0px;
+
+}
+
+.personajes {
+    background-color: rgba(0, 0, 0,0.5);
+    padding: 0.5%;
+    margin: 0.5%;
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+    width: 17%;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    height: auto;
+}
+
+.personajes p {
+    text-align: center;
+    color: ghostwhite;
+}
+
+
+#temporadas {
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    margin: -25px 0px -16px 0px;
+
+}
+
+.temporadas {
+    background-color: rgba(0, 0, 0,0.5);
+    padding: 0.5%;
+    margin: 0.5%;
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+    width: 14%;
+    text-align: center;
+    vertical-align: middle;
+    color: ghostwhite;
+    height: auto;
+    
+}
+
+#libros {
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    margin: -25px 0px -25px 0px;
+
+}
+
+.libros {
+    background-color: rgba(0, 0, 0,0.5);
+    padding: 0.5%;
+    margin: 0.5%;
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+    width: 17%;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    height: auto;
+    
+}

@@ -1,0 +1,75 @@
+body {
+    background-image: url("../images/background-2.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    margin: auto;
+    position: relative;
+    padding: 170px 0px 0px 0px;
+}
+h1{
+    color: #b5382f;
+}
+
+#formulario {
+    color: #b5382f;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    
+    
+}
+
+#formulario h1 {
+    font-size: 35px;
+    
+}
+
+#formulario div {
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    vertical-align: middle;
+    width: 40%;
+    padding: 0px 0px 1px 0px;
+    margin: auto;
+    border-radius: 5px;
+    
+}
+
+
+input {
+    padding: 5px 10px;
+    border: 0;
+    margin: 5px;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    
+}
+
+button {
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    color: darkgray;
+    background-color: black;
+    border-radius: 5px;
+}
+
+label {
+    width: 200px;
+    display: inline-block;
+    color: ghostwhite;
+    font-size: 23px;
+}
+
+# formulario h2 {
+    padding: 0;
+    margin: 0px 0px 0px 90px;
+    text-align: left;
+}
+ 
+
+

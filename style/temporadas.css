@@ -1,0 +1,39 @@
+body {
+    padding: 96px 0px 30px 0px;   
+}
+
+#temporadas h1, h2 {
+    text-align: center;
+    color: ghostwhite;
+}
+
+#temporadas h1 {
+    margin: 0;
+}
+
+#temporadas {
+    background-color: rgba(0,0,0,0.6);
+    color: ghostwhite;
+    padding: 1%;
+    margin: 0px 0px -15px 0px;
+}
+
+footer h2 {
+    text-align: left;
+    color: #b5382f;
+}
+
+.video {
+    display: block;
+    width: 42%;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.trama {
+    display: block;
+    width: 100%;
+    text-align: justify;
+}

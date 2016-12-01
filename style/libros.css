@@ -1,0 +1,49 @@
+body {
+    margin: 10px 0px 0px 0px;
+}
+#libros {
+    background-color: rgba(0,0,0,0.6);
+    color: ghostwhite;
+    padding: 1%;
+    margin: 0px 0px -25px 0px;
+    
+}
+
+#libros h1 {
+    margin: 0;
+}
+
+#libros h1, h2 {
+    text-align: center;
+    color: ghostwhite;
+}
+
+.libros {
+    background-color: rgba(0, 0, 0,0.5);
+    padding: 0.5%;
+    margin: 0.5%;
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    vertical-align: top;
+    color: black;
+    height: auto;
+    
+}
+
+.libros img {
+    width: 100%;
+    height: auto;
+}
+
+.reseñas {
+    width: 77%;
+    color: ghostwhite;
+    text-align: justify;
+    display: inline-block;
+    
+}
+
+
