@@ -35,7 +35,7 @@
             
         </nav>
         <nav class= "celular">     
-            <i class="material-icons">&#xE8EE;</i>             
+            <i class="material-icons">&#xE5D2;</i>             
         </nav>
     </header>
     
@@ -49,19 +49,19 @@
             <div class="carousel-title"><h1>Bienvenidos a la pagina oficial de Game Of Thrones</h1></div>
             
                 
-             <div id="slider">
-                <ul class="slides">
-                    <li class="slide slide1"><img src="images/carousel-1.jpg"></li>
-                    <li class="slide slide2"><img src="images/carousel-2.jpg"></li>
-                    <li class="slide slide3"><img src="images/carousel-3.jpg"></li>
-                    <li class="slide slide4"><img src="images/carousel-4.jpg"></li>
-                    <li class="slide slide5"><img src="images/carousel-5.jpg"></li>
-                    <li class="slide slide6"><img src="images/carousel-6.jpg"></li>
-                    <li class="slide slide7"><img src="images/carousel-1.jpg"></li>
-                </ul>
+             <div id="contenedor-slider" class="contenedor-slider">
+                <div id="slider" class="slider">
+                    <section class="slider__section"><img src="images/carousel-1.jpg" class="slider__img"></section>
+                    <section class="slider__section"><img src="images/carousel-2.jpg" class="slider__img"></section>
+                    <section class="slider__section"><img src="images/carousel-3.jpg" class="slider__img"></section>
+                    <section class="slider__section"><img src="images/carousel-4.jpg" class="slider__img"></section>
+                    <section class="slider__section"><img src="images/carousel-5.jpg" class="slider__img"></section>
+                    <section class="slider__section"><img src="images/carousel-6.jpg" class="slider__img"></section>
+                </div>
+                 
+                <div id="btn-prev" class="btn-prev">&#60;</div>
+                <div id="btn-next" class="btn-next">&#62;</div>
             </div>
-
-        </div>
                 
 			</section>
         
@@ -84,7 +84,9 @@
         <hr>
         <section id="personajes">
             <h1>Personajes</h1>
-              <div class="filas">
+            <div id="contenedor-personajes" class="contenedor-personajes">  
+              <div class="personajes-filas">
+                <section class="personajes-section">
                 <div class="personajes">
                 <img src="images/per1.jpg">
                 <p>Daenerys Targaryen</p>
@@ -105,6 +107,8 @@
                 <img src="images/per5.jpg">     
                 <p>Jaime Lannister</p>
                 </div>
+                </section>
+                <section class="personajes-section">
                 <div class="personajes">
                 <img src="images/per6.jpg">     
                 <p>Sansa Stark</p>
@@ -121,8 +125,13 @@
                 <img src="images/per9.jpg">     
                 <p>Eddard Stark</p>
                 </div>
+                </section>
                 
-                
+              </div>
+                  
+                <div id="btn-prev" class="btn-prev">&#60;</div>
+                <div id="btn-next" class="btn-next">&#62;</div>
+                  
             </div>
             
         <a href="personajes.html">

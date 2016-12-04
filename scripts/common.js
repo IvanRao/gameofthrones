@@ -1,31 +1,83 @@
 $(function() {
 
-    //settings for slider
-    var width = 1349;
-    var animationSpeed = 3000;
-    var pause = 6500;
-    var currentSlide = 1;
+var slider = $('#slider');
+var siguiente = $('#btn-next');
+var anterior = $('#btn-prev');
 
-    //cache DOM elements
-    var $slider = $('#slider');
-    var $slideContainer = $('.slides', $slider);
-    var $slides = $('.slide', $slider);
+//mover ultima imagen al primer lugar
+$('#slider .slider__section:last').insertBefore('#slider .slider__section:first');
+//mostrar la primera imagen con un margen de -100%
+slider.css('margin-left', '-'+100+'%');
 
-    var interval;
+function moverD() {
+	slider.animate({
+		marginLeft:'-'+200+'%'
+	} ,1500, function(){
+		$('#slider .slider__section:first').insertAfter('#slider .slider__section:last');
+		slider.css('margin-left', '-'+100+'%');
+	});
+}
 
-    function startSlider() {
-        interval = setInterval(function() {
-            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-                if (++currentSlide === $slides.length) {
-                    currentSlide = 1;
-                    $slideContainer.css('margin-left', 0);
-                }
-            });
-        }, pause);
-    }
-   
+function moverI() {
+	slider.animate({
+		marginLeft:0
+	} ,1500, function(){
+		$('#slider .slider__section:last').insertBefore('#slider .slider__section:first');
+		slider.css('margin-left', '-'+100+'%');
+	});
+}
 
-    startSlider();
+function autoplay() {
+	interval = setInterval(function(){
+		moverD();
+	}, 5000);
+}
+siguiente.on('click',function() {
+	moverD();
+	clearInterval(interval);
+	autoplay();
+});
+
+anterior.on('click',function() {
+	moverI();
+	clearInterval(interval);
+	autoplay();
+});
 
 
+autoplay();
+    
+    
+
+
+});
+
+$(function() {
+
+var personajes = $('#personajes-filas');
+var siguiente = $('#btn-next');
+var anterior = $('#btn-prev');
+    
+$('#personajes-filas section:last').insertBefore('#personajes-filas section:first');
+//mostrar la primera imagen con un margen de -100%
+personajes.css('margin-left', '-'+100+'%');
+    
+function moverD() {
+	personajes.animate({
+		marginLeft:'-'+200+'%'
+	} ,1500, function(){
+		$('#personajes-filas section:first').insertAfter('#personajes-filas section:last');
+		personajes.css('margin-left', '-'+100+'%');
+	});
+}
+
+function moverI() {
+	personajes.animate({
+		marginLeft:0
+	} ,1500, function(){
+		$('#personajes-filas section:last').insertBefore('#personajes-filas section:first');
+		personajes.css('margin-left', '-'+100+'%');
+	});
+}
+    
 });

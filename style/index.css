@@ -9,6 +9,7 @@ h3 {
     text-decoration: none;
     transition: 0.2s;
     margin: auto;
+    display: inline-block;
 }
 
 a {
@@ -28,6 +29,7 @@ h3:hover {
     text-decoration: none;
     transition: 0.2s;
     margin: auto;
+    display: inline-block;
 }
 
 .carousel-title {
@@ -45,32 +47,57 @@ h3:hover {
 
 }
 
-#slider {
-    width: 1349px;
-    height: 550px;
-    overflow: hidden;
+#contenedor-slider {
+  margin: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 105%;
 }
 
-#slider .slides {
-    display: block;
-    width: 9000px;
-    height: 550px;
-    margin: 0;
-    padding: 0;
+.slider {
+  display: flex;
+  width: 600%;
 }
 
-#slider .slide {
-    float: left;
-    list-style-type: none;
-    width: 1349px;
-    height: 550px;
+.slider__section {
+  width: 100%;
 }
 
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
-#slider img {
-	height: 100%;
-    width: 100%;
-    
+.btn-prev, .btn-next {
+  width: 40px;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10%;
+  font-family: monospace;
+  cursor: pointer;
+  color: white;
+  vertical-align: middle;
+}
+
+.btn-prev:hover, .btn-next:hover {
+  background-color: black;
+}
+
+.btn-prev {
+  left: 10px;
+}
+
+.btn-next {
+  right: 10px;
 }
 
 
@@ -124,11 +151,38 @@ h3:hover {
     height: auto;
 }
 
+.personajes-filas {
+  display: flex;
+  width: 200%;
+}
+
 .personajes p {
     text-align: center;
     color: ghostwhite;
 }
 
+.personajes-filas img {
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
+.personajes-section {
+    width: 100%;
+}
+
+#contenedor-personajes {
+  margin: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+
+.filas img {
+    width: 100%;
+    height: 50%;
+}
 
 #temporadas {
     text-align: center;
