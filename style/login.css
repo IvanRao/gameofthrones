@@ -71,5 +71,32 @@ label {
     text-align: left;
 }
  
+@media(max-width: 800px) {
+    
+    #formulario div {
+        background-color: rgba(0,0,0,0.7);
+        text-align: center;
+        vertical-align: middle;
+        width: 77%;
+        padding: 0px 0px 1px 0px;
+        border-radius: 5px;
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    footer {
+        color: #b5382f;
+        padding: 0px 10px 0px 10px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        text-align: left;
+        background-color: rgba(0,0,0,0.9);
+        margin: auto;
+        margin-bottom: -58%;
+    }
+}
 
 

@@ -1,5 +1,12 @@
-$(function() {
+$(document).ready(function () {
 
+    $("#boton-menu").on("click", function() {
+        
+		$("nav.botonera").slideToggle(500);
+	
+	});
+    
+    
 var slider = $('#slider');
 var siguiente = $('#btn-next');
 var anterior = $('#btn-prev');
@@ -48,36 +55,8 @@ anterior.on('click',function() {
 autoplay();
     
     
-
-
-});
-
-$(function() {
-
-var personajes = $('#personajes-filas');
-var siguiente = $('#btn-next');
-var anterior = $('#btn-prev');
-    
-$('#personajes-filas section:last').insertBefore('#personajes-filas section:first');
-//mostrar la primera imagen con un margen de -100%
-personajes.css('margin-left', '-'+100+'%');
-    
-function moverD() {
-	personajes.animate({
-		marginLeft:'-'+200+'%'
-	} ,1500, function(){
-		$('#personajes-filas section:first').insertAfter('#personajes-filas section:last');
-		personajes.css('margin-left', '-'+100+'%');
-	});
-}
-
-function moverI() {
-	personajes.animate({
-		marginLeft:0
-	} ,1500, function(){
-		$('#personajes-filas section:last').insertBefore('#personajes-filas section:first');
-		personajes.css('margin-left', '-'+100+'%');
-	});
-}
+     
     
 });
+
+

@@ -15,7 +15,7 @@ body {
     background-color: rgba(0,0,0,0.6);
     color: ghostwhite;
     padding: 1%;
-    margin: 0px 0px -15px 0px;
+    margin: auto;
 }
 
 footer h2 {
@@ -36,4 +36,44 @@ footer h2 {
     display: block;
     width: 100%;
     text-align: justify;
+}
+
+.celular {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    
+    .computadora {
+        display: none;
+    }
+    
+    .celular {
+        display: block;
+    }
+    
+    .video {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+}
+    
+    .trama {
+        width: 100%;
+        color: ghostwhite;
+        text-align: justify;
+        display: block;
+        font-size: 25px;
+    }
+    
+    #temporadas h1 {
+        font-size: 50px;
+    }
+    
+    #temporadas h2 {
+        font-size: 35px;
+    }
+    
 }
