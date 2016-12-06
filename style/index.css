@@ -236,7 +236,7 @@ h3:hover {
     .carousel-title {
         z-index: 2;
         position: absolute;
-        top: 110;
+        top: 1%;
         left: 20%;
         right: 20%;
         background-color: rgba(0,0,0,0.6);
